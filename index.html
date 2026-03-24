@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUM Store</title>
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTAINER CENTRAL */
+.container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* ANIMAÇÕES */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #aaa;
+    max-width: 300px;
+}
+
+/* BOTÕES */
+.buttons {
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    gap: 15px;
+}
+
+.btn {
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    width: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #8b0000, #ff0000);
+    color: white;
+}
+
+.btn-secondary {
+    background: #111;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SEÇÕES */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product img {
+    width: 85%;
+    border-radius: 20px;
+}
+
+.caption {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ESPECIFICAÇÕES */
+.specs {
+    background: linear-gradient(180deg, #0a0a0a, #111);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.specs h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.specs li {
+    margin-bottom: 10px;
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* CTA FINAL */
+.cta-final {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-final h2 {
+    font-size: 24px;
+}
+
+.cta-final p {
+    margin: 15px 0;
+    color: #aaa;
+}
+
+/* RESPONSIVO */
+@media(min-width:768px){
+    .hero h1 { font-size: 42px; }
+    .hero p { font-size: 18px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<section class="hero fade">
+    <img src="img/logo-nexum.jpg.jpeg" class="logo">
+
+   <p>
+                    A <b>NEXUM</b> não nasceu para ser apenas mais uma marca no teu armário. Surgimos da necessidade de um equipamento que suporte a intensidade bruta do treino sem sacrificar a sofisticação visual.
+                </p>
+
+                <p>
+                    Acreditamos que o teu vestuário é a tua armadura de foco. Por isso, cada peça do nosso foi meticulosamente projetada com tecidos de alta densidade e acabamentos premium em <span class="highlight-detail">Silk 3D</span>. O objetivo é simples: garantir que a tua presença seja tão marcante quanto os teus resultados.
+                   <p> NEXUM® | Engenharia têxtil desenhada para o foco absoluto.</p>
+                </p>
+
+    
+</section>
+
+<!-- PRODUTO -->
+<section class="section product fade">
+    <img src="img/bermuda1.jpg.jpeg">
+    <p class="caption">
+        NEXUM Focus — liberdade total de movimento com design premium.
+    </p>
+</section>
+
+<!-- ACADEMIA -->
+<section class="section fade">
+    <div class="card">
+        <img src="img/academia.jpg.jpeg">
+        <p class="caption">
+            Zero transparência. Elasticidade e firmeza no cós anatômico duplo 🦾🏋🏽‍♂️
+        </p>
+    </div>
+</section>
+
+<!-- PRAIA -->
+<section class="section fade">
+    <div class="card">
+        <img src="img/praia.jpg.jpeg">
+        <p class="caption">
+            Ideal para dias de sol e aquele mar lindo ❤️🏝️🏖️
+        </p>
+    </div>
+</section>
+
+<!-- SHOPPING -->
+<section class="section fade">
+    <div class="card">
+        <img src="img/shopping.jpg.jpeg">
+        <p class="caption">
+            Do treino ao dia a dia — estilo limpo, presença forte.
+        </p>
+    </div>
+</section>
+
+<!-- ESPECIFICAÇÕES -->
+<section class="section specs fade">
+    <img src="img/cos.jpg.png" style="width:100%; border-radius:15px; margin-bottom:15px;">
+
+    <h2>Chega de bermuda ruim.</h2>
+
+    <ul>
+        <li>✔ Cós anatômico duplo — não deforma</li>
+        <li>✔ Elasticidade real (movimento livre)</li>
+        <li>✔ Zero transparência</li>
+        <li>✔ Bolso para celular grande</li>
+        <li>✔ Costura reforçada padrão premium</li>
+        <li>✔ Tecido leve + respirável</li>
+    </ul>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final fade">
+    <h2>Você sente a diferença no primeiro uso.</h2>
+
+    <p>
+        Estoque limitado. Garanta agora sua NEXUM Focus.
+    </p>
+
+    <div class="buttons">
+        <button class="btn btn-primary" onclick="buyNow()">
+            Comprar Agora
+        </button>
+
+        <button class="btn btn-secondary" onclick="openTikTok()">
+            Comprar no TikTok
+        </button>
+
+        <button class="btn btn-primary" onclick="buyNow()">
+            Comprar com Segurança
+        </button>
+    </div>
+</section>
+
+</div>
+
+<!-- JS -->
+<script>
+
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 50){
+            el.classList.add('show');
+        }
+    });
+});
+
+function buyNow(){
+    window.location.href = "https://br.shp.ee/xoAJR46z";
+}
+
+function openTikTok(){
+    window.location.href = "https://www.tiktok.com/@nexumofficialstore?_r=1&_t=ZS-94xQJdct4Yy";
+}
+
+</script>
+
+</body>
+</html>
